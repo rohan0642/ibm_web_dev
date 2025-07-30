@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rules & Regulations – Election Platform</title>
+  <link rel="stylesheet" href="rules.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ✅ NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-top">
+  <a href="index.html" class="home-link">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSej4fyN97OIQFe5S-exVlehtT-AtnA1bR2bg&s" alt="Logo" class="logo-img" />
+    <h1 class="portal-title">Online Voter Portal</h1>
+  </a>
+</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ElectionInfo.html">Election Info</a>
+      <a href="live-updates.html">Live Updates</a>
+      <a href="results.html">Results</a>
+      <a href="support.html">Support Section</a>
+      <a href="rules.html" class="active">Rules & Regulations</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>📢 Rules & Regulations</h1>
+
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">🔒 Voter Eligibility Rules</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Only registered voters can participate.</li>
+            <li>Valid ID or email is required to vote.</li>
+            <li>Each voter is allowed only one vote.</li>
+            <li>Multiple attempts or impersonation will lead to disqualification.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">📅 Voting Guidelines</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Vote during the official election window.</li>
+            <li>Review all selections before submission.</li>
+            <li>Once cast, votes are final and cannot be changed.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">🚫 Prohibited Activities</button>
+        <div class="accordion-content">
+          <ul>
+            <li>No campaigning or voter influence during voting.</li>
+            <li>Impersonation and misuse of credentials is forbidden.</li>
+            <li>Using bots/scripts to vote is prohibited.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">🧾 Conduct of Candidates</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Maintain honesty and fairness throughout the campaign.</li>
+            <li>No hate speech or defamation allowed.</li>
+            <li>Bribery or unethical influence is not tolerated.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">🔐 Privacy & Security</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Your vote is anonymous and confidential.</li>
+            <li>Data is used only for verification, not stored with vote.</li>
+            <li>Do not share login credentials or OTPs with anyone.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">⚖️ Disciplinary Actions</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Violation of rules may result in vote cancellation.</li>
+            <li>Serious offenses may lead to ban from the platform.</li>
+            <li>Election administrators will take necessary action.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header">💬 Reporting Misconduct</button>
+        <div class="accordion-content">
+          <ul>
+            <li>Report any suspicious behavior or technical issues.</li>
+            <li>All reports are confidential and acted upon promptly.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const headers = document.querySelectorAll('.accordion-header');
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        header.classList.toggle('active');
+        content.classList.toggle('open');
+      });
+    });
+  </script>
+
+  <footer>
+    &copy; 2025 Online Voter Portal | All rights reserved.
+  </footer>
+
+</body>
+</html>

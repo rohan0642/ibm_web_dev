@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard | Online Voter Portal</title>
+  <link rel="stylesheet" href="admin-dashboard.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-top">
+  <a href="index.html" class="home-link">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSej4fyN97OIQFe5S-exVlehtT-AtnA1bR2bg&s" alt="Logo" class="logo-img" />
+    <h1 class="portal-title">Online Voter Portal</h1>
+  </a>
+</div>
+
+    </div>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ElectionInfo.html">Election Info</a>
+      <a href="live-updates.html">Live Updates</a>
+      <a href="results.html">Results</a>
+      <a href="support.html">Support Section</a>
+      <a href="rules.html">Rules & Regulations</a>
+    </div>
+  </nav>
+
+  <!-- Dashboard Layout: Sidebar + Main Content -->
+  <div class="dashboard-layout">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>🛡️ Admin Panel</h2>
+      <ul>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Manage Voters</a></li>
+        <li><a href="#">Manage Elections</a></li>
+        <li><a href="#">Manage Candidates</a></li>
+        <li><a href="#">View Results</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header>
+        <h1>Welcome, Admin</h1>
+        <p>Manage and monitor elections here</p>
+      </header>
+
+      <section class="cards">
+        <div class="card">
+          <h3>Total Voters</h3>
+          <p>1,245</p>
+        </div>
+        <div class="card">
+          <h3>Ongoing Elections</h3>
+          <p>3</p>
+        </div>
+        <div class="card">
+          <h3>Votes Cast Today</h3>
+          <p>865</p>
+        </div>
+      </section>
+
+      <section class="manage-section">
+        <h2>Quick Actions</h2>
+        <ul>
+          <li><button>Add New Election</button></li>
+          <li><button>Approve Voter Registrations</button></li>
+          <li><button>Upload Candidate List</button></li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+</body>
+</html>

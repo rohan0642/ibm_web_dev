@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f2f5;
+  color: #222;
+}
+
+/* Header */
+header {
+  background-color: #7e3ff2;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+/* Verification Section */
+.verification-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.verification-box {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in;
+}
+
+.verification-box h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #7e3ff2;
+}
+
+.verification-box label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+}
+
+.verification-box input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  transition: border 0.3s;
+}
+
+.verification-box input:focus {
+  border-color: #7e3ff2;
+  outline: none;
+}
+
+.verification-box button {
+  width: 100%;
+  background-color: #7e3ff2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.verification-box button:hover {
+  background-color: #5a27c0;
+}
+
+#status {
+  margin-top: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.signup-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.signup-link a {
+  color: #7e3ff2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

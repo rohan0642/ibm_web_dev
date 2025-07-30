@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Voter Dashboard</title>
+  <link rel="stylesheet" href="voter-dashboard.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ✅ Navbar -->
+  <nav class="navbar">
+    <div class="nav-top">
+      <!-- Left: Logo & Title -->
+      <a href="homepage.html" class="home-link">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSej4fyN97OIQFe5S-exVlehtT-AtnA1bR2bg&s" alt="Logo" class="logo-img" />
+        <h1 class="portal-title">Online Voter Portal</h1>
+      </a>
+
+      <!-- Right: Profile Dropdown -->
+      <div class="profile-dropdown">
+  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" class="profile-icon" alt="Profile Icon" />
+  <div class="dropdown-menu">
+    <a href="profile.html">👤 Profile</a>
+    <a href="index.html">🚪 Logout</a>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Navigation Links -->
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="ElectionInfo.html">Election Info</a>
+      <a href="live-updates.html">Live Updates</a>
+      <a href="results.html">Results</a>
+      <a href="support.html">Support Section</a>
+      <a href="rules.html">Rules & Regulations</a>
+    </div>
+  </nav>
+
+  <!-- ✅ Dashboard Content -->
+  <div class="main-box">
+    <div class="header">🗳️ Voter Dashboard</div>
+    <div class="voting-box">
+      <select class="vote-select" id="constituency">
+        <option disabled selected>Select Constituency</option>
+        <option>North Ward</option>
+        <option>East Zone</option>
+        <option>Central Area</option>
+      </select>
+
+      <select class="vote-select" id="party" onchange="updateCandidate()">
+        <option disabled selected>Select Political Party</option>
+        <option value="John Smith">Democratic Front</option>
+        <option value="Priya Patel">Unity Party</option>
+        <option value="Ravi Kumar">People's Voice</option>
+      </select>
+
+      <input type="text" id="candidateName" class="vote-input" placeholder="Candidate's Name" readonly />
+
+      <label class="declaration">
+        <input type="checkbox" id="declarationCheckbox" onchange="toggleSubmit()" />
+        I hereby declare that I am voting truthfully and responsibly.
+      </label>
+
+      <button class="submit-btn" id="submitBtn" onclick="submitVote()" disabled>SUBMIT</button>
+    </div>
+  </div>
+
+  <script src="voter-dashboard.js"></script>
+</body>
+</html>

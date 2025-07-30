@@ -1,0 +1,253 @@
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo-img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.portal-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+
+
+/* Base */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa url('BG.jpg') repeat;
+  background-size: cover;
+  color: #333;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  z-index: -1;
+}
+
+/* Beautified Navigation Bar */
+.navbar {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.nav-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.6rem;
+}
+
+.logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.portal-title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #FFD700;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #FFD700;
+}
+
+/* Content Layout */
+.main-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+  width: 320px;
+  flex: 0 0 auto;
+  line-height: 1.6;
+  backdrop-filter: blur(3px);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+/* Buttons */
+.middle-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.middle-buttons button, .btn {
+  background: linear-gradient(135deg, #6C4AB6, #2E8BFF);
+  color: #fff;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.8rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.middle-buttons button:hover, .btn:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #4e34a3, #1e6edd);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+}
+
+
+/* Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #6C4AB6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.team-member span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Footer
+footer {
+  background-color: #111;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+}
+
+footer div {
+  margin: 0.5rem 0;
+  flex: 1;
+  min-width: 200px;
+} */
+
+.social-footer {
+  background-color: #222;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.footer-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.social-icons {
+  margin: 10px 0 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0a58ca;
+}

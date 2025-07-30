@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Voter Verification</title>
+  <link rel="stylesheet" href="VoterLogin.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <!-- <div class="logo">🗳️ Logo</div> -->
+    <h1>Online Voter Portal</h1>
+  </header>
+
+  <!-- Main Section -->
+  <main class="verification-container">
+    <div class="verification-box">
+      <h2>🔒 Voter Verification</h2>
+
+      <label for="voterId">Voter ID Number</label>
+      <input type="text" id="username" placeholder="Enter your Voter ID" />
+
+      <label for="pass">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" />
+
+      <button onclick="login()">✔ SUBMIT</button>
+      <p id="status"></p>
+
+      <div class="signup-link">
+        New user? <a href="signup.html">Sign Up here</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="VoterLogin.js"></script>
+</body>
+</html>
